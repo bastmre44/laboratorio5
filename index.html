@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title> Mini Blog </title>
-    <link rel ="stylesheet" href="css/styles.css">
-
+    <title>Mini Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <header>
-        <h1> Mini Blog</h1>
 
-    </header>
-    <section class="search">
-        <input type="text" id="searchInput" placeholder="Search posts...">
-        <button id = "searchBtn">Search</button>
+<header>
+    <h1>Mini Blog</h1>
+</header>
 
-    </section>
-    <section id="states">
-        <div id ="loading" class="state hidden">
-            <p>Loading...</p>
+<section class="search">
+    <input type="text" id="searchInput" placeholder="Search posts...">
+    <button id="searchBtn">Search</button>
+</section>
 
-        </div>
-        <div id="error" class="state hidden">
-            <p> Error loading posts </p>
-            <button id="retryBtn">Retry</button>
+<section id="states">
 
-        </div>
-        <div id="empty" class="state hidden">
-            <p> No posts found</p>
+    <div id="loading" class="state hidden">
+        <p>Loading...</p>
+    </div>
 
-        </div>
+    <div id="error" class="state hidden">
+        <p>Error loading posts</p>
+        <button id="retryBtn">Retry</button>
+    </div>
 
-    </section>
-    <section>
-        <section id="postContainer"></section>
-        <section class="create-post">
-            <h2> Create Post</h2>
-            <form id="postForm">
-                <input type="text" id="title" placeholder="Title" required>
-                <textarea id="body" placeholder="Content" required></textarea>
+    <div id="empty" class="state hidden">
+        <p>No posts found</p>
+    </div>
 
-                <button type="submit"> Create Post </button>
+</section>
 
-            </form>
-        </section>
-        <script src="js/app.js"></script>
+<section id="postsContainer"></section>
 
-    </section>
+<section class="create-post">
+
+    <h2>Create Post</h2>
+
+    <form id="postForm">
+
+        <input type="text" id="title" placeholder="Title" required>
+
+        <textarea id="body" placeholder="Content" required></textarea>
+
+        <button type="submit">Create Post</button>
+
+    </form>
+
+</section>
+
+<script src="js/app.js"></script>
+
 </body>
+
 </html>

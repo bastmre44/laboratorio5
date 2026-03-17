@@ -1,3 +1,5 @@
+
+/*para renderizar los posts*/
 export function renderPosts(posts){
 
     const container = document.getElementById("postsContainer");

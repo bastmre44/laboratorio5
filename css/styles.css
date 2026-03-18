@@ -7,7 +7,7 @@ body{
 }
 
 header{
-    background: #6b6b6b;
+    background: #6b1c1c;
     color: white;
     padding: 20px;
     text-align: center;
@@ -19,32 +19,48 @@ header{
     text-align: center;
 
 }
+.search input{
+    padding:10px;
+    width:250px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
 
 .search button{
     padding: 10px 15px;
+    border:none;
+    background:#6b1c1c;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
 
 }
 
 #postsContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 20px;
     padding: 20px;
 
 }
 
 .post{
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:transform 0.2s ease;
+}
+.post:hover{
+    transform:translateY(-5px);
 }
 
 .create-post{
 padding:20px;
     background:white;
     margin:20px;
+    border-radius: 12px;
 }
 
 .create-post input,
@@ -52,6 +68,16 @@ padding:20px;
     width:100%;
     margin-bottom:10px;
     padding:10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+
+}
+.create-post button{
+    padding:10px;
+    background:#6b1c1c;
+    color:white;
+    border:none;
+    border-radius:6px;
 }
 
 .hidden{
